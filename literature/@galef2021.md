@@ -6,6 +6,8 @@ year: 2020
 
 Scout mindset vs soldier mindset
 
+---
+
 ## 5 signs of scout mindset 
 
 1. Do you tell other people when you realize they were right?
