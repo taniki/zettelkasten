@@ -10,3 +10,5 @@ doi: 10.1162/003355303322552801
 [zotero](zotero://select/items/@autor2003)
 
 ## Note
+
+#compétence #informatisation 

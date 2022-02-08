@@ -4,6 +4,8 @@ authors: Julia Galef
 year: 2020
 ---
 
+# The scout mindset: why some people see things clearly and others don't
+
 Scout mindset vs soldier mindset
 
 ---
@@ -15,3 +17,5 @@ Scout mindset vs soldier mindset
 3. Do you ever prof yourself wrong?
 4. Do you take precautions to avoid fooling yourself?
 5. Do you have any good critics?
+
+#compétence #critical_thinking
