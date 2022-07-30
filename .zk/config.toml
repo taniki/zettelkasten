@@ -26,6 +26,7 @@ template = "default.md"
 
 # Path globs ignored while indexing existing notes.
 ignore = [
+	"specials/*",
 	"readme.md"
 ]
 
