@@ -112,6 +112,8 @@ editor = "vim"
 # Command used to preview a note during interactive fzf mode.
 # Set it to an empty string "" to disable preview.
 
+fzf-line = "{{#style 'understate'}}{{date created}}{{/style}} {{style 'underline' filename-stem}} {{style 'bright-white' title}} {{#style 'understate'}}{{#each tags}}#{{this}} {{/each}}{{/style}}{{style 'understate' body}}"
+
 # bat is a great tool to render Markdown document with syntax highlighting.
 #https://github.com/sharkdp/bat
 fzf-preview = "batcat -p --color always {-1}"
