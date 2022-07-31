@@ -163,6 +163,10 @@ dead-link = "error"
 #    $ zk edit recents --interactive
 #recents = "--sort created- --created-after 'last two weeks'"
 
+recents = "--sort created- --created-after 'last two weeks'"
+
+orphans = "--orphan -s modified"
+
 
 # COMMAND ALIASES
 #
@@ -187,7 +191,7 @@ dead-link = "error"
 
 # Edit the notes selected interactively among the notes created the last two weeks.
 # This alias doesn't take any argument, so we don't use $@.
-recent = "zk edit --sort created- --created-after 'last two weeks' --interactive"
+# recent = "zk edit --sort created- --created-after 'last two weeks' --interactive"
 
 # Print paths separated with colons for the notes found with the given
 # arguments. This can be useful to expand a complex search query into a flag
@@ -205,10 +209,11 @@ lucky = "zk list --quiet --format full --sort random --limit 1"
 # Edit this configuration file.
 conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
 
+drafts = "zk list --tag draft $argv"
+
 generate_orphans = """
-zk list --orphan \
+zk list orphans \
 --format="- [[{{filename-stem}}]] {{title}} (dernière modification : {{date modified}})" \
--s modified \
 --header "# pages orphelines\n\n" \
 > specials/orphans.md; \
 git commit -m "met à jour la liste des pages orphelines" specials/orphans.md\
