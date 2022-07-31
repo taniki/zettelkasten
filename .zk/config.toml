@@ -112,7 +112,13 @@ editor = "vim"
 # Command used to preview a note during interactive fzf mode.
 # Set it to an empty string "" to disable preview.
 
-fzf-line = "{{#style 'understate'}}{{date created}}{{/style}} {{style 'underline' filename-stem}} {{style 'bright-white' title}} {{#style 'understate'}}{{#each tags}}#{{this}} {{/each}}{{/style}}{{style 'understate' body}}"
+fzf-line = """
+{{#style 'understate'}}{{date created}}{{/style}} \
+{{style 'underline' filename-stem}} \
+{{style 'bright-white' title}} \
+{{#style 'understate'}}{{#each tags}}#{{this}} {{/each}}{{/style}}\
+{{style 'understate' body}}"\
+"""
 
 # bat is a great tool to render Markdown document with syntax highlighting.
 #https://github.com/sharkdp/bat
@@ -199,6 +205,14 @@ lucky = "zk list --quiet --format full --sort random --limit 1"
 # Edit this configuration file.
 conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
 
+generate_orphans = """
+zk list --orphan \
+--format="- [[{{filename-stem}}]] {{title}} (dernière modification : {{date modified}})" \
+-s modified \
+--header "# pages orphelines\n\n" \
+> specials/orphans.md; \
+git commit -m "met à jour la liste des pages orphelines" specials/orphans.md\
+"""
 
 # Folgezettel
 nextsibling = 'zk-fz-nextsibling.py $ZK_NOTEBOOK_DIR $argv'
