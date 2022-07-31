@@ -1,5 +1,7 @@
 # pages orphelines
 
+- [[6]] Ma configuration Zotero (dernière modification : 2022-07-30)
+- [[120]] commandes que j'utilise pour ma zettelkasten (dernière modification : 2022-07-30)
 - [[114]] croisée des chemins (dernière modification : 2022-07-30)
 - [[115]] le clavier : anatomie d'une interface utilisateur (dernière modification : 2022-07-30)
 - [[119]] Anavi Macro Pad 8 (dernière modification : 2022-07-30)
@@ -70,7 +72,6 @@
 - [[54b]] Les data analysts produisent de l'information (dernière modification : 2022-05-15)
 - [[82]] Les grands récits en 2022 (dernière modification : 2022-05-15)
 - [[30]] Les sondages électoraux ne sont pas corrélés aux votes (dernière modification : 2022-05-15)
-- [[6]] Ma configuration Zotero (dernière modification : 2022-05-15)
 - [[48b]] Mathématiques et bibliologie (dernière modification : 2022-05-15)
 - [[36]] Modéliser l'effet du réchauffement climatique sur les conflits (dernière modification : 2022-05-15)
 - [[24]] Ne pas limiter la santé au traitement des maladies (dernière modification : 2022-05-15)
